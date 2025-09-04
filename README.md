@@ -1,12 +1,47 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Quiz App 🎯
 
-Currently, two official plugins are available:
+A simple Quiz Application built with **React + Vite + Tailwind CSS**.  
+It shows one question at a time, tracks your score, and displays results with correct/incorrect answers.  
+Includes extra features like timer, difficulty levels, progress bar, and high-score persistence.  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
+- One question at a time (from JSON file)
+- Score tracking and results summary
+- Timer per question (auto-submit on timeout)
+- Difficulty selection (easy / medium / hard)
+- Progress indicator with progress bar
+- High score saved in **localStorage**
+- Responsive UI with Tailwind CSS
+- React Router for `/` (quiz) and `/result`
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
+- [React](https://reactjs.org/) (with Hooks)
+- [Vite](https://vitejs.dev/) (bundler)
+- [Tailwind CSS](https://tailwindcss.com/) (styling)
+- [React Router](https://reactrouter.com/) (navigation)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ⚡ Getting Started
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/madhukar-30/Quiz-App.git
+cd Quiz-App
+```
+### 2. Install dependencies
+```bash
+npm install
+```
+### 3. Run locally
+``bash
+npm run dev
+
+### 4. Build for production
+```bash
+npm run build
+```
+### 5. Preview production build
+```bash
+npm run preview
+```
+
