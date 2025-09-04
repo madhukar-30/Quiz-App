@@ -1,14 +1,23 @@
+// src/components/ProgressBar.jsx
+import React from 'react';
+
 const ProgressBar = ({ current, total }) => {
-  const percentage = (current / total) * 100;
+  const percentage = ((current + 1) / total) * 100;
   
   return (
-    <div className="w-full bg-gray-200 rounded-full h-2">
-      <div 
-        className="bg-blue-500 h-2 rounded-full transition-all duration-300"
-        style={{ width: `${percentage}%` }}
-      />
-      <p className="text-sm mt-2">Question {current + 1} of {total}</p>
+    <div>
+      <div className="flex justify-between text-xs md:text-sm text-gray-600 mb-2">
+        <span>Question {current + 1} of {total}</span>
+        <span className="hidden sm:inline">Progress: {Math.round(percentage)}%</span>
+      </div>
+      <div className="w-full bg-green-200 rounded-full h-2 md:h-3">
+        <div 
+          className="bg-teal-500 h-2 md:h-3 rounded-full transition-all duration-500 ease-out"
+          style={{ width: `${percentage}%` }}
+        />
+      </div>
     </div>
   );
 };
-export default ProgressBar
+
+export default ProgressBar;
